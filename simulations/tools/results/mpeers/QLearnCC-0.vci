@@ -1,0 +1,71 @@
+file 2388394 1283898463                                         
+version 2
+run QLearnCC-0-20100907-23:57:36-2500
+attr configname QLearnCC
+attr datetime 20100907-23:57:36
+attr experiment QLearnCC
+attr inifile D:/Developement/Oversim2/multic/simulations/omnetpp.ini
+attr iterationvars $mpeers=10
+attr iterationvars2 "$mpeers=10, $repetition=0"
+attr measurement $mpeers=10
+attr mpeers 10
+attr network oversim.underlay.simpleunderlay.SimpleUnderlayNetwork
+attr processid 2500
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+vector 1  SimpleUnderlayNetwork.globalObserver.globalStatistics  incoming_bytes  ETV
+vector 2  SimpleUnderlayNetwork.globalObserver.globalStatistics  drops  ETV
+vector 3  SimpleUnderlayNetwork.globalObserver.globalStatistics  delayed_acks  ETV
+vector 4  SimpleUnderlayNetwork.globalObserver.globalStatistics  timetotimeouts  ETV
+vector 5  SimpleUnderlayNetwork.globalObserver.globalStatistics  9rateOf1To0  ETV
+vector 6  SimpleUnderlayNetwork.globalObserver.globalStatistics  max9RateOf1To0  ETV
+vector 7  SimpleUnderlayNetwork.globalObserver.globalStatistics  9rateOf1To1  ETV
+vector 8  SimpleUnderlayNetwork.globalObserver.globalStatistics  max9RateOf1To1  ETV
+vector 9  SimpleUnderlayNetwork.globalObserver.globalStatistics  9rateOf1To2  ETV
+vector 10  SimpleUnderlayNetwork.globalObserver.globalStatistics  max9RateOf1To2  ETV
+vector 11  SimpleUnderlayNetwork.globalObserver.globalStatistics  9rateOf1To3  ETV
+vector 12  SimpleUnderlayNetwork.globalObserver.globalStatistics  max9RateOf1To3  ETV
+vector 13  SimpleUnderlayNetwork.globalObserver.globalStatistics  9rateOf1To4  ETV
+vector 14  SimpleUnderlayNetwork.globalObserver.globalStatistics  max9RateOf1To4  ETV
+vector 15  SimpleUnderlayNetwork.globalObserver.globalStatistics  9rateOf1To5  ETV
+vector 16  SimpleUnderlayNetwork.globalObserver.globalStatistics  max9RateOf1To5  ETV
+vector 17  SimpleUnderlayNetwork.globalObserver.globalStatistics  9rateOf1To6  ETV
+vector 18  SimpleUnderlayNetwork.globalObserver.globalStatistics  max9RateOf1To6  ETV
+vector 19  SimpleUnderlayNetwork.globalObserver.globalStatistics  9rateOf1To7  ETV
+vector 20  SimpleUnderlayNetwork.globalObserver.globalStatistics  max9RateOf1To7  ETV
+vector 21  SimpleUnderlayNetwork.globalObserver.globalStatistics  9rateOf1To8  ETV
+vector 22  SimpleUnderlayNetwork.globalObserver.globalStatistics  max9RateOf1To8  ETV
+vector 23  SimpleUnderlayNetwork.globalObserver.globalStatistics  1rate  ETV
+vector 24  SimpleUnderlayNetwork.globalObserver.globalStatistics  max2Rate  ETV
+vector 25  SimpleUnderlayNetwork.globalObserver.globalStatistics  "GlobalNodeList: Number of nodes"  ETV
+vector 26  SimpleUnderlayNetwork.globalObserver.globalStatistics  "GlobalNodeList: Number of bootstrapped malicious nodes"  ETV
+1	2780 95784 122817197 203934374 6009 9999 3991 37948 41022 157530893 6218713793295
+2	98564 79820 122817197 203934374 6009 9999 3991 0 0 0 0
+3	178384 79820 122817197 203934374 6009 9999 3991 0 6 2458 4310
+4	258204 143221 122817197 203934374 6009 9999 3991 0.076685788936344 0.077418900937021 307.17400027832 23.642304276447
+5	401425 95784 122817198 203934375 6009 9999 3991 15000 39000 147580500 5481074250000
+6	497209 95784 122817198 203934375 6009 9999 3991 33000 39000 150963000 5715396000000
+7	592993 95784 122817198 203934375 6009 9999 3991 22500 39000 151117500 5745881250000
+8	688777 95784 122817198 203934375 6009 9999 3991 36000 39000 155226000 6037969500000
+9	784561 95784 122817198 203934375 6009 9999 3991 19500 39000 148501500 5548443750000
+10	880345 99775 122817198 203934375 6009 9999 3991 33000 39000 151972500 5791884750000
+11	980120 99775 122817198 203934375 6009 9999 3991 18000 39000 147457500 5474805750000
+12	1079895 99775 122817198 203934375 6009 9999 3991 33000 39000 151177500 5733150750000
+13	1179670 99775 122817198 203934375 6009 9999 3991 18000 39000 150591000 5709618000000
+14	1279445 99775 122817198 203934375 6009 9999 3991 34500 39000 154863000 6010321500000
+15	1379220 99775 122817198 203934375 6009 9999 3991 16500 39000 147235500 5452935750000
+16	1478995 99775 122817198 203934375 6009 9999 3991 33000 39000 150493500 5679479250000
+17	1578770 99775 122817198 203934375 6009 9999 3991 21000 39000 149613000 5633055000000
+18	1678545 99775 122817198 203934375 6009 9999 3991 33000 39000 153478500 5904906750000
+19	1778320 99775 122817198 203934375 6009 9999 3991 18000 39000 146569500 5403372750000
+20	1878095 99775 122817198 203934375 6009 9999 3991 33000 39000 149493000 5606293500000
+21	1977870 99775 122817198 203934375 6009 9999 3991 21000 39000 147780000 5495400000000
+22	2077645 99775 122817198 203934375 6009 9999 3991 33000 39000 151095000 5726794500000
+23	2177420 103766 122817198 203934375 6009 9999 3991 306000 346500 1336446000 4.47659541e+014
+24	2281186 103766 122817198 203934375 6009 9999 3991 331500 349500 1368762000 4.69466001e+014
+25	2384952 1761 123650165 203954736 6050 10000 80 10 10 800 8000
+26	2386713 1681 123650165 203954736 6050 10000 80 0 0 0 0

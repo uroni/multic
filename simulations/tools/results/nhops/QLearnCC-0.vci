@@ -1,0 +1,74 @@
+file 2560966 1283987765                                         
+version 2
+run QLearnCC-0-20100908-23:26:21-5644
+attr configname QLearnCC
+attr datetime 20100908-23:26:21
+attr experiment QLearnCC
+attr inifile D:/Developement/Oversim2/multic/simulations/omnetpp.ini
+attr iterationvars $nhops=2
+attr iterationvars2 "$nhops=2, $repetition=0"
+attr measurement $nhops=2
+attr network oversim.underlay.simpleunderlay.SimpleUnderlayNetwork
+attr nhops 2
+attr processid 5644
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+vector 1  SimpleUnderlayNetwork.globalObserver.globalStatistics  incoming_bytes  ETV
+1	2943 99525 321352440 537484707 6019 9999 3981 131546 138648 538032998 72720261245050
+vector 2  SimpleUnderlayNetwork.globalObserver.globalStatistics  drops  ETV
+2	102468 82758 321352440 537484707 6019 9999 3981 0 51 65915 1377747
+vector 3  SimpleUnderlayNetwork.globalObserver.globalStatistics  delayed_acks  ETV
+3	185226 79623 321352440 537484707 6019 9999 3981 0 10 9587 33561
+vector 4  SimpleUnderlayNetwork.globalObserver.globalStatistics  timetotimeouts  ETV
+4	264849 146898 321352440 537484707 6019 9999 3981 0.0067680411217807 0.0083008270377648 29.263091851898 0.21581043396745
+vector 5  SimpleUnderlayNetwork.globalObserver.globalStatistics  9rateOf1To0  ETV
+5	411747 91563 321352441 537484708 6019 9999 3981 1500 6000 7095000 14436000000
+vector 6  SimpleUnderlayNetwork.globalObserver.globalStatistics  max9RateOf1To0  ETV
+6	503310 91563 321352441 537484708 6019 9999 3981 1500 6000 7090500 14411250000
+vector 7  SimpleUnderlayNetwork.globalObserver.globalStatistics  9rateOf1To1  ETV
+7	594873 95544 321352441 537484708 6019 9999 3981 21000 39000 145597500 5344296750000
+vector 8  SimpleUnderlayNetwork.globalObserver.globalStatistics  max9RateOf1To1  ETV
+8	690417 95544 321352441 537484708 6019 9999 3981 30000 39000 147249000 5457649500000
+vector 9  SimpleUnderlayNetwork.globalObserver.globalStatistics  9rateOf1To2  ETV
+9	785961 95544 321352441 537484708 6019 9999 3981 21000 39000 145362000 5330641500000
+vector 10  SimpleUnderlayNetwork.globalObserver.globalStatistics  max9RateOf1To2  ETV
+10	881505 99525 321352441 537484708 6019 9999 3981 31500 39000 147315000 5464215000000
+vector 11  SimpleUnderlayNetwork.globalObserver.globalStatistics  9rateOf1To3  ETV
+11	981030 95544 321352441 537484708 6019 9999 3981 1500 7500 9750000 30991500000
+vector 12  SimpleUnderlayNetwork.globalObserver.globalStatistics  max9RateOf1To3  ETV
+12	1076574 95544 321352441 537484708 6019 9999 3981 1500 7500 9739500 30944250000
+vector 13  SimpleUnderlayNetwork.globalObserver.globalStatistics  9rateOf1To4  ETV
+13	1172118 95553 321352441 537484708 6019 9999 3981 1500 10500 8925000 31135500000
+vector 14  SimpleUnderlayNetwork.globalObserver.globalStatistics  max9RateOf1To4  ETV
+14	1267671 95553 321352441 537484708 6019 9999 3981 1500 10500 8913000 31036500000
+vector 15  SimpleUnderlayNetwork.globalObserver.globalStatistics  9rateOf1To5  ETV
+15	1363224 99525 321352441 537484708 6019 9999 3981 19500 39000 126544500 4061351250000
+vector 16  SimpleUnderlayNetwork.globalObserver.globalStatistics  max9RateOf1To5  ETV
+16	1462749 99525 321352441 537484708 6019 9999 3981 24000 39000 127113000 4098226500000
+vector 17  SimpleUnderlayNetwork.globalObserver.globalStatistics  9rateOf1To6  ETV
+17	1562274 99525 321352441 537484708 6019 9999 3981 22500 39000 139125000 4881168000000
+vector 18  SimpleUnderlayNetwork.globalObserver.globalStatistics  max9RateOf1To6  ETV
+18	1661799 99525 321352441 537484708 6019 9999 3981 30000 39000 140110500 4946820750000
+vector 19  SimpleUnderlayNetwork.globalObserver.globalStatistics  9rateOf1To7  ETV
+19	1761324 99525 321352441 537484708 6019 9999 3981 18000 39000 144315000 5262741000000
+vector 20  SimpleUnderlayNetwork.globalObserver.globalStatistics  max9RateOf1To7  ETV
+20	1860849 99525 321352441 537484708 6019 9999 3981 27000 39000 145938000 5373922500000
+vector 21  SimpleUnderlayNetwork.globalObserver.globalStatistics  9rateOf1To8  ETV
+21	1960374 99525 321352441 537484708 6019 9999 3981 21000 39000 132241500 4423214250000
+vector 22  SimpleUnderlayNetwork.globalObserver.globalStatistics  max9RateOf1To8  ETV
+22	2059899 99525 321352441 537484708 6019 9999 3981 25500 39000 132993000 4473823500000
+vector 23  SimpleUnderlayNetwork.globalObserver.globalStatistics  9rateOf1To9  ETV
+23	2159424 95544 321352441 537484708 6019 9999 3981 1500 9000 12669000 48996000000
+vector 24  SimpleUnderlayNetwork.globalObserver.globalStatistics  max9RateOf1To9  ETV
+24	2254968 95544 321352441 537484708 6019 9999 3981 1500 9000 12652500 48885750000
+vector 25  SimpleUnderlayNetwork.globalObserver.globalStatistics  1rate  ETV
+25	2350512 103506 321352441 537484708 6019 9999 3981 342000 402000 1503216000 5.67905796e+014
+vector 26  SimpleUnderlayNetwork.globalObserver.globalStatistics  max2Rate  ETV
+26	2454018 103506 321352441 537484708 6019 9999 3981 351000 406500 1518501000 5.79461868e+014
+vector 27  SimpleUnderlayNetwork.globalObserver.globalStatistics  "GlobalNodeList: Number of nodes"  ETV
+27	2557524 1761 323024158 537539680 6050 10000 80 20 20 1600 32000
+vector 28  SimpleUnderlayNetwork.globalObserver.globalStatistics  "GlobalNodeList: Number of bootstrapped malicious nodes"  ETV
+28	2559285 1681 323024158 537539680 6050 10000 80 0 0 0 0

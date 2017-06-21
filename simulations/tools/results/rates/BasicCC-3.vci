@@ -1,0 +1,29 @@
+file 29948 1284064695                                           
+version 2
+run BasicCC-3-20100909-22:17:08-3400
+attr configname BasicCC
+attr datetime 20100909-22:17:08
+attr experiment BasicCC
+attr inifile D:/Developement/Oversim2/multic/simulations/omnetpp.ini
+attr iterationvars $rateIncoming=100000
+attr iterationvars2 "$rateIncoming=100000, $repetition=0"
+attr measurement $rateIncoming=100000
+attr network oversim.underlay.simpleunderlay.SimpleUnderlayNetwork
+attr processid 3400
+attr rateIncoming 100000
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 3
+attr seedset 3
+
+vector 1  SimpleUnderlayNetwork.globalObserver.globalStatistics  incoming_bytes  ETV
+vector 2  SimpleUnderlayNetwork.globalObserver.globalStatistics  drops  ETV
+vector 3  SimpleUnderlayNetwork.globalObserver.globalStatistics  delayed_acks  ETV
+vector 4  SimpleUnderlayNetwork.globalObserver.globalStatistics  "GlobalNodeList: Number of nodes"  ETV
+vector 5  SimpleUnderlayNetwork.globalObserver.globalStatistics  "GlobalNodeList: Number of bootstrapped malicious nodes"  ETV
+1	1036 9241 53754065 105207390 520 999 480 0 318 35404 4432602
+2	10277 10608 53754065 105207390 520 999 480 7054 15161 7211119 108398193241
+3	20885 8689 53754065 105207390 520 999 480 0 0 0 0
+4	29574 192 56976557 105314706 550 1000 10 20 20 200 4000
+5	29766 182 56976557 105314706 550 1000 10 0 0 0 0

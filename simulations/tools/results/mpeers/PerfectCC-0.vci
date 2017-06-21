@@ -1,0 +1,33 @@
+file 99426 1283725006                                           
+version 2
+run PerfectCC-0-20100906-00:12:26-5532
+attr configname PerfectCC
+attr datetime 20100906-00:12:26
+attr experiment PerfectCC
+attr inifile D:/Developement/Oversim2/multic/simulations/omnetpp.ini
+attr iterationvars $mpeers=9
+attr iterationvars2 "$mpeers=9, $repetition=0"
+attr measurement $mpeers=9
+attr mpeers 9
+attr network oversim.underlay.simpleunderlay.SimpleUnderlayNetwork
+attr processid 5532
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+vector 1  SimpleUnderlayNetwork.globalObserver.globalStatistics  incoming_bytes  ETV
+vector 2  SimpleUnderlayNetwork.globalObserver.globalStatistics  drops  ETV
+vector 3  SimpleUnderlayNetwork.globalObserver.globalStatistics  delayed_acks  ETV
+vector 4  SimpleUnderlayNetwork.globalObserver.globalStatistics  timetotimeouts  ETV
+vector 5  SimpleUnderlayNetwork.globalObserver.globalStatistics  rate  ETV
+vector 6  SimpleUnderlayNetwork.globalObserver.globalStatistics  "GlobalNodeList: Number of nodes"  ETV
+vector 7  SimpleUnderlayNetwork.globalObserver.globalStatistics  "GlobalNodeList: Number of bootstrapped malicious nodes"  ETV
+1	1160 18430 6161988 40761736 158 999 842 40386 44573 36158296 1553181808208
+2	19590 15533 6161988 40761736 158 999 842 0 52 10946 220470
+3	35123 15166 6161988 40761736 158 999 842 0 18 4705 35287
+4	50289 29238 6161988 40761736 158 999 842 0.001997530690704 0.013229999085292 3.7475893514874 0.022309068667761
+5	79527 19272 6161989 40761737 158 999 842 433363 464727 378091255 1.6980019193499e+014
+6	98799 322 7890181 40802127 200 1000 17 10 10 170 1700
+7	99121 305 7890181 40802127 200 1000 17 0 0 0 0

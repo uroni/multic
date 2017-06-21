@@ -1,0 +1,140 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage[latin1]{inputenc}
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage[ngerman]{babel}
+\usepackage{floatflt}
+\usepackage{wrapfig}
+\usepackage[T1]{fontenc}
+\usepackage[margin=2.5cm]{geometry}
+
+\lstset{extendedchars=true,numbers=left,numberstyle=\tiny,language=sh,breaklines=true}
+
+\begin{document}
+
+\title{Simulation installation instructions for linux}
+\author{Martin Raiber}
+
+
+\maketitle
+
+\hypersetup{%
+	pdfborder={0 0 0}
+}
+\newpage
+
+\section{Prerequisites}
+
+Omnet uses TCL/TK as GUI library with BLT which adds some new widgets. For some calculation GMP (GNU Multi Precision Arithmetic Library) is used. These Libraries should be present as development version on the system. In Debian/Ubuntu this can be simply be done by executing this command as root:
+
+\begin{lstlisting}
+apt-get install tk8.4-dev libgmp3-dev blt-dev
+\end{lstlisting}
+
+\subsection{Omnet}
+
+Omnet can be downloaded at:\\
+\href{http://www.omnetpp.org/omnetpp}{http://www.omnetpp.org/omnetpp}\\
+
+The simulations are written for Omnet 4.1.
+
+It needs to be put in a separate directory called \$PROJECT from now on, where the whole project will reside.
+
+Unpack it:
+\begin{lstlisting}
+cd \$PROJECT
+tar xvzf omnetpp-4.1.-scr.tgz
+\end{lstlisting}
+
+Add omnetpp to your path by adding it to your .bashrc or .profile in your home directory. Either
+\begin{lstlisting}
+cd ~
+echo -e "\nexport PATH=$PROJECT/omnetpp-4.1/bin:\$PATH" >> .bashrc
+\end{lstlisting}
+or
+\begin{lstlisting}
+cd ~
+echo -e "\nexport PATH=$PROJECT/omnetpp-4.1/bin:\$PATH" >> .profile
+\end{lstlisting}
+
+Compile it:
+\begin{lstlisting}
+cd \$PROJECT
+./configure
+make
+\end{lstlisting}
+
+Restart your console by logging out and logging in again.
+
+\subsection{INET}
+
+Download the INET framwork for Oversim from \href{http://www.oversim.org/chrome/site/INET-OverSim-20100505.tgz}{http://www.oversim.org/chrome/site/INET-OverSim-20100505.tgz} to \$PROJECT and unpack it:
+\begin{lstlisting}
+cd $PROJECT
+tar xvzf INET-OverSim-20100505.tgz
+\end{lstlisting}
+
+Edit the Makefile \$PROJECT/INET-OverSim-20100505/Makefile and change the line
+\begin{lstlisting}
+cd src && opp_makemake -f --deep --make-lib -o inet -O out $$NSC_VERSION_DEF
+\end{lstlisting}
+to
+\begin{lstlisting}
+cd src && opp_makemake -f --deep --make-so -o inet -O out $$NSC_VERSION_DEF
+\end{lstlisting}
+
+Compile the release and debug library:
+\begin{lstlisting}
+cd $PROJECT/INET-OverSim-20100505
+make MODE=debug
+make MODE=release
+\end{lstlisting}
+
+\subsection{OverSim}
+
+Download OverSim from \href{http://www.oversim.org/chrome/site/OverSim-20100526.tgz}{http://www.oversim.org/chrome/site/OverSim-20100526.tgz} into the folder \$PROJECT. And unpack it:
+\begin{lstlisting}
+cd PPROJECT
+tar xvzf OverSim-20100526.tgz
+\end{lstlisting}
+
+Modify the Makefile \$PROJECT/OverSim-20100526/Makefile and to the line:
+\begin{lstlisting}
+cd src && opp_makemake -f --deep -linet -O out -o OverSim \$(DEFS) ...
+\end{lstlisting}
+Add "`--make-so"' so it looks like this:
+\begin{lstlisting}
+cd src && opp_makemake -f --deep --make-so -linet -O out -o OverSim \$(DEFS) ...
+\end{lstlisting}
+
+Compile the release and debug library:
+\begin{lstlisting}
+cd $PROJECT/OverSim-20100526
+make MODE=debug
+make MODE=release
+\end{lstlisting}
+
+\section{The Simulation}
+
+Create a directory in \$PROJECT and check the project out into it:
+\begin{lstlisting}
+cd $PROJECT
+mkdir multic
+svn co https://projects.net.in.tum.de/svn/p2p-congestion/src/trunk multic
+\end{lstlisting}
+
+Compile it:
+\begin{lstlisting}
+cd $PROJECT\multic
+make
+\end{lstlisting}
+
+Now start the omnet IDE by typing:
+\begin{lstlisting}
+omnetpp
+\end{lstlisting}
+
+Import the multic Project in your workspace. Create a run configuration. Select /multic/simulations as working directory. Select multicmain in the src directory as your executable and start it. It should run now.
+
+\end{document}
